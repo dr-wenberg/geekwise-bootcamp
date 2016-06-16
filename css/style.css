@@ -1,6 +1,6 @@
 /*GLOBAL STYLES*/
 
-HTML, body {
+html, body {
     height:100%;
 }
 
@@ -17,16 +17,16 @@ body {
 h1, h2, h3 {
     margin:0px;
     padding:0px;
-    color:#8DC63F;
+    color:#16D5FB;
 }
 
 h1 {
-    /*font-size:6em;*/ 
+    font-size:2em;
     
 }  
 
 p {
-    color:#A6A6A6;
+    color:#88CB03;
     margin:15px 0px;
     line-height:20px;
 }
@@ -37,8 +37,30 @@ a {
 }
 
 a:hover {
-    color:#AEAEAE;
+    color:#16D5FB;
 }
+
+figure {
+    padding:10px;
+    background-color:#DAE817;
+    display: inline-block;
+    border-radius:2px;
+    /*box-shadow:7px 7px 7px*/
+}
+
+
+figcaption {
+    text-align: center;
+    font-size:1.25em;
+    color:#000000;
+}
+main {
+    width:1200px;
+    margin:20px auto;
+    overflow:hidden;
+    
+}
+
 
 /*header styles*/
 
@@ -49,9 +71,13 @@ header {
 
 #logo {
     color: #AEAEAE;
+    position:relative;
+    top:20px;
+    left:20px;
 }
 #logo:hover {
     color:#FF7900;
+    
 }
 
 /*banner style*/
@@ -59,14 +85,85 @@ header {
 #banner2 {
     overflow:hidden;
     padding:175px 0px;
-    border-top:6px solid #FF7900;
-    background-color:#AFAFAF;
-    background: url(../images/banner2.jpg) no-repeat center center #FF7900;
+    border-top:6px solid #16D5FB;
+    background-color:#896138;
+    background: url(../images/banner2.jpg) no-repeat center center #000000;
     background-size:cover;
 }
 #bannerText {
     color: #FFFFFF;
     font-size: 6em; 
     text-align: center;
-    text-shadow: 6px 6px #000000;
+    text-shadow: 6px 16px 6px #000000;
+}
+/*Navigation Style*/
+#menu {
+    position:absolute;
+    top:23px;
+    right:20px;
+}
+
+#menu ul li {
+    /*display: inline;*/
+    display: inline-block;
+    margin:0px 12px;
+}
+
+.currentPage {
+    color:#FF7900; 
+}
+
+/*THREE COLUMN STYLE */
+
+.columnA, .columnB, .columnC {
+    width:384px;
+}
+
+.columnA, .columnB {
+    float:left;
+    margin-right:24px;
+}
+.columnC {
+    float:left;
+    
+}
+
+
+
+
+.columnA h2, .columnB h2, .columnC h2 {
+    font-size: 1.5em;
+    font-weight:700;
+    text-align:center;
+    margin:15px 0px;
+}
+
+
+.columnA h2, .columnB h2, .columnC h2 {
+    padding:0px;
+    text-align: justify;
+}
+
+.columnA span, .columnB span, .columnC span {
+    background-color:#FF7900;
+    color:#FFFFFF;
+    display:block;
+    font-size:1.75em;
+    font-weight:600;
+    text-align:center;
+    padding:15px 0px;
+}
+
+
+.button {
+	background-color:#88CB03;
+	border-radius:10px;
+	padding:15px 18px;
+	text-decoration:none;
+	color:#000000;
+	display:inline-block;
+}
+.button:hover {
+	background-color:#000000;
+	font-weight: 700;
 }
